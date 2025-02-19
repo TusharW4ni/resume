@@ -1,0 +1,222 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Tushar Wani} \\ \vspace{1pt}
+    \small \href{https://www.linkedin.com/in/tushar-m-wani/}{\underline{linkedin.com/in/tushar-m-wani/}}
+    $\cdot$ \small \href{https://github.com/TusharW4ni}{\underline{github.com/TusharW4ni}}
+    $\cdot$ \href{mailto:tushar.wani@live.com}{\underline{tushar.wani@live.com}} $\cdot$ \small 469-235-9513
+    $\cdot$ \small Plano, TX
+\end{center}
+
+% \resumeItemListStart
+
+% \resumeItemListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Anticipated Masters of Science in Computer Science}{August 2025 - May 2026}
+      {University of Texas at Dallas}{}
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Science in Computer Science}{August 2022 - May 2025}
+      {University of Texas at Dallas $|$ GPA - 3.8}{}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, TypeScript, Java, Python, PostgreSQL, MySQL, SQLite} \\
+     \textbf{Frameworks}{: NuxtJS, React, Vue, TailwindCSS, ExpressJS, PrismaORM, Auth0} \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code, IntelliJ JetBrains, AWS S3, AWS Cloudfront} \\
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading{\textbf{EPICS Mentor}}{June 2024 - Present}
+      \resumeItemListStart
+        \resumeItem{Mentoring two teams working on a ride-sharing web app and a volunteer database for two non-profit organizations}
+        % \resumeItem{Conduct two-week long sprints and used various \textbf{GitHub tools} for project management}
+        \resumeItem{Leading agile-like sprints using \textbf{GitHub Projects} for project management}
+        \resumeItem{Constantly reviewing code to ensure codebase coherency and prevent feature regression }
+        % \resumeItem{Fostered accountability and ownership of work in team members}
+        \resumeItem{Fostering accountability by encouraging team members to be proud of their work and celebrating accomplishments}
+        \resumeItem{Over the past two semesters, I have guided four teams developing web apps for non-profit organizations}
+        % \resumeItem{Conducted workshops for tools like \textbf{Prisma} and \textbf{Auth0}}
+        \resumeItem{Conducted two workshops for the \textbf{Prisma ORM} tool; going over what it is, what it does, and conducted exercises on how to write database queries using the tool}
+        \resumeItem{Conducted one workshop on the \textbf{Auth0} service; going over common vulnerabilities with authentication systems, significance of the Auth0 service, and how to setup a development tenant in Auth0}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeProjectHeading{\textbf{Short-Term Working Group}}{August 2024 - December 2024}
+      \resumeItemListStart
+        \resumeItem{Played a major role in improving resources for my Software Engineering class through the STWG created by the professor}
+        \resumeItem{Assigned tasks to team members and planned refinements by discussing their comforts, strengths, and preferences}
+        \resumeItem{Attended regular meetings and kept extensive meeting notes to keep the team on-track with the current TODOs}
+        \resumeItem{Enhanced the curriculum to reduce the learning-curve for the course's semester-long project by building on the team's previous experiences}
+        \resumeItem{Created a 14+ minute long video presentation giving a bird's-eye view of the components of web development}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+  \resumeProjectHeading{\textbf{TWCGateway}}{August 2023 - May 2024}
+    \resumeItemListStart
+      \resumeItem{Implemented a full-stack web app for automating the onboarding process for a DFW-area based non-profit organization called The Warren Center}
+      \resumeItem{Lead two different teams of six people over the course of two semesters}
+      \resumeItem{Handled frequent requirement changes over the course of development}
+      \resumeItem{Converted 90\% of pen/paper based workflows into the web interface}
+      \resumeItem{Implemented token-based authentication using \textbf{Auth0}}
+      \resumeItem{Created the frontend using \textbf{ReactJS} and used \textbf{TailwindCSS} for styling}
+      \resumeItem{Created the backend using \textbf{ExpressJS}, and \textbf{Prisma} as the ORM with a dockerized \textbf{PostgreSQL} database}
+      \resumeItem{Deployed on \textbf{AWS S3} and \textbf{AWS Cloudfront}}
+
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+% \section{Projects}
+%   \resumeSubHeadingListStart
+%     \resumeProjectHeading{\textbf{TWCGateway}}{August 2023 - May 2024}
+%   \resumeSubHeadingListEnd
+
+
+%-----------Collegiate Involvement-----------
+\section{Collegiate Involvement}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading{\textbf{Axxess Hackathon} $|$ \emph{Overall $2^{nd} Place$}}{February 2024}
+      \resumeItemListStart
+        \resumeItem{Developed a web app using \textbf{ReactJS+Django} to help COPD patients monitor their symptoms}
+        \resumeItem{Used \textbf{k-means ML algorithm} on a COPD dataset from \textbf{Kaggle} to assign scores for severity of their symptoms }
+      \resumeItemListEnd
+    \resumeProjectHeading{\textbf{HackUTD} $|$ \emph{CBRE $3^{rd}$ Place}}{November 2023}
+      \resumeItemListStart
+        \resumeItem{Developed a website to buy stake in houses and other properties}
+        \resumeItem{Used a \textbf{Vision-and-Language Transformer (ViLT)} model fine-tuned for property evaluation based on photos}
+      \resumeItemListEnd
+    \resumeProjectHeading{\textbf{History of Aviation Archives $|$ \emph{40+ volunteering hours}}}{January 2023 - May 2023}
+      \resumeItemListStart
+        \resumeItem{Processed and prepared the complete John Wiren Collection, totaling 5.7 linear feet}
+        \resumeItem{Independently organized and cataloged available primary sources for preservation}
+        \resumeItem{Authored detailed collection entry documents for archival documentation and reference}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+
+
+
+\end{document}
