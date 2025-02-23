@@ -20,6 +20,9 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
+% ----
+\usepackage{fontawesome5}
+
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -99,38 +102,134 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
 
+% My reason to pursue a computer science degree was because I am fascinated by computers, and, more importantly, this gives me the most direct line to make people's lives simpler. I build software to positively impact people's lives. I yearn to build systems that provide convenience and make the user's life easier.
+
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge Tushar Wani} \\ \vspace{1pt}
-    \small \href{https://www.linkedin.com/in/tushar-m-wani/}{\underline{linkedin.com/in/tushar-m-wani/}}
-    $\cdot$ \small \href{https://github.com/TusharW4ni}{\underline{github.com/TusharW4ni}}
-    $\cdot$ \href{mailto:tushar.wani@live.com}{\underline{tushar.wani@live.com}} $\cdot$ \small 469-235-9513
-    $\cdot$ \small Plano, TX
+    \textbf{\Huge Tushar Wani} \\ \vspace{2pt}
+    \small \href{https://github.com/TusharW4ni}{\faGithub \hspace{1pt} \underline{github.com/TusharW4ni}}
+    $\cdot$ \small \href{https://www.linkedin.com/in/tushar-m-wani/}{\faLinkedin \hspace{1pt} \underline{linkedin.com/in/tushar-m-wani/}}
+    $\cdot$ \small \href{mailto:tushar.wani@live.com}{\faEnvelope \hspace{1pt} \underline{tushar.wani@live.com}}
+    $\cdot$ \small \faMobile \hspace{1pt} 469-235-9513
+    $\cdot$ \small \faMapMarker \hspace{0pt} Plano, TX
 \end{center}
 
-% \resumeItemListStart
+%----------------------------
+% \begin{center}
+  % \emph{I build software, exclusively, to make the user's life easier and more enjoyable.}
+% \end{center}
+%----------------------------
 
-% \resumeItemListEnd
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading{\textbf{TWCGateway} - On-boarding web application for The Warren Center, a non-profit organization}{}
+  \resumeItemListStart
+    % \resumeItem{\textbf{What?} On-boarding web application for The Warren Center, a non-profit organization}
+    % \resumeItem{\textbf{How?}}
+    \resumeItem{Collaborated with two different teams of 6 people over two semesters}
+    \resumeItem{Created frontend using \textbf{ReactJS}, and \textbf{TailwindCSS} for styling}
+    \resumeItem{Created backend using \textbf{ExpressJS}, and \textbf{Prisma} as the ORM for a \textbf{dockerized PostgreSQL} database}
+    \resumeItem{Deployed on \textbf{AWS S3} and \textbf{AWS Cloudfront}}
+    % \resumeItem{\textbf{Impact?}}
+    \resumeItem{Replaced 90\% of cumbersome pen-based processes into the web interface}
+    \resumeItem{Enhanced data accuracy by centralizing the data through digitizing the on-boarding process}
+  \resumeItemListEnd
 
-%-----------EDUCATION-----------
-\section{Education}
+
+  \resumeProjectHeading{\textbf{Comet Marketplace} - Second-hand product marketplace website exclusively for UTD students and faculty }{}
+  \resumeItemListStart
+    % \resumeItem{\textbf{What?} Used product marketplace website exclusively for UTD students and faculty}
+    % \resumeItem{\textbf{How?}}
+    \resumeItem{Collaborated with a team of 8 people over a semester}
+    \resumeItem{Created the frontend using \textbf{ReactJS}, backend using \textbf{ExpressJS}, and utilized a \textbf{PostgreSQL} database}
+    \resumeItem{Implemented the ability to upload photos to the \textbf{ExpressJS} server}
+    \resumeItem{Created real-time messaging functionality using \textbf{WebSockets} and \textbf{Socket.IO} library}
+    % \resumeItem{\textbf{Impact?}}
+    \resumeItem{Improved over the UTD mobile app by creating search filters, bookmarks, and a better chat experience}
+    \resumeItem{Enhanced resource accessibility for UTD students by creating a user-friendly platform to find/sell items }
+  \resumeItemListEnd
+
+  % \resumeProjectHeading{\textbf{Generative Coverless Steganography}}{}
+  % \resumeItemListStart
+  %   \resumeItem{\textbf{What?}}
+  %   \resumeItem{\textbf{How?}}
+  %   \resumeItem{\textbf{Impact?}}
+  % \resumeItemListEnd
+
+  % \resumeProjectHeading{\textbf{AirWrite}}{}
+  %   \resumeItemListStart
+  %     \resumeItem{\textbf{What?}}
+  %     \resumeItem{\textbf{How?}}
+  %     \resumeItem{\textbf{Impact?}}
+  %   \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------Volunteering-----------
+\section{Volunteering}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Anticipated Masters of Science in Computer Science}{August 2025 - May 2026}
-      {University of Texas at Dallas}{}
+    \resumeProjectHeading{\textbf{EPICS Mentor} - Guiding teams creating software for non-profit organizations}{June 2024 - May 2025}
+      \resumeItemListStart
+        % \resumeItem{\textbf{What?} Guiding teams creating software for non-profit organizations}
+        \resumeItem{Guided 5 teams over three semesters}
+        % \resumeItem{\textbf{How?}}
+        \resumeItem{Lead agile-like two week long sprints and used \textbf{GitHub Projects} to keep track of progress}
+        \resumeItem{Diligently reviewed code to ensure codebase coherency and to mitigate any feature regression}
+        \resumeItem{Conducted workshops on \textbf{Auth0} and \textbf{Prisma} talking about motivations for use, pro's/con's, and how-to's for both}
+        \resumeItem{Fostered an open environment to make the teams comfortable to experiment during development}
+        \resumeItem{Fostered accountability by encouraging team members to be proud of their work and celebrated accomplishments}
+        % \resumeItem{\textbf{Impact?}}
+        \resumeItem{Delivered two of the five on-going projects over the three semesters}
+      \resumeItemListEnd
+
+    \resumeProjectHeading{\textbf{Short-Term Working Group} - Created resources for Software Engineering course}{August 2024 - December 2024}
+      \resumeItemListStart
+        % \resumeItem{\textbf{What?} Created resources for Software Engineering course}
+        % \resumeItem{\textbf{How?}}
+        \resumeItem{Collaborated with a team of 7 people over a semester}
+        \resumeItem{Created a 14+ minute long video presentation giving a bird's-eye view of the components of web development}
+        \resumeItem{Created thumbnails for all videos created by teammates}
+        \resumeItem{Attended regular meetings and kept extensive meeting notes to keep the team on-track with the current TODOs}
+        % \resumeItem{Provided and received feedback on the video tutorials created by the team and myself}
+        % \resumeItem{Enhanced the curriculum to reduce the learning-curve for the course's semester-long project by building on previous semester's experiences}
+        % by building on the team's previous semester's experiences in the course
+        % \resumeItem{\textbf{Impact?}}
+        \resumeItem{Facilitated in making student on-boarding to web development concepts easier}
+        \resumeItem{The team compiled a playlist of 6 videos about the core concepts of web dev: \href{https://bit.ly/stwg-wevdev-playlist}{https://bit.ly/stwg-wevdev-playlist}}
+      \resumeItemListEnd
+
+    \resumeProjectHeading{\textbf{History of Aviation Archives}}{January 2023 - May 2023}
+      \resumeItemListStart
+        \resumeItem{Processed and prepared the complete John Wiren Collection, totaling 5.7 linear feet}
+        \resumeItem{Independently organized and cataloged available primary sources for preservation}
+        \resumeItem{Authored detailed collection entry documents for archival documentation and reference}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
+%-----------Collegiate Involvement-----------
+\section{Collegiate Involvement}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Bachelor of Science in Computer Science}{August 2022 - May 2025}
-      {University of Texas at Dallas $|$ GPA - 3.8}{}
+    \resumeProjectHeading{\textbf{Axxess Hackathon} $|$ \emph{Overall $2^{nd} Place$}}{February 2024}
+      \resumeItemListStart
+        \resumeItem{Developed a web app using \textbf{ReactJS+Django} to help COPD patients monitor their symptoms}
+        \resumeItem{Used \textbf{k-means ML algorithm} on a COPD dataset from \textbf{Kaggle} to assign scores for severity of their symptoms }
+      \resumeItemListEnd
+%     \resumeProjectHeading{\textbf{HackUTD} $|$ \emph{CBRE $3^{rd}$ Place}}{November 2023}
+%       \resumeItemListStart
+%         \resumeItem{Developed a website to buy stake in houses and other properties}
+%         \resumeItem{Used a \textbf{Vision-and-Language Transformer (ViLT)} model fine-tuned for property evaluation based on photos}
+%       \resumeItemListEnd
+
   \resumeSubHeadingListEnd
+
+%-------------------------------------------
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
@@ -142,81 +241,15 @@
     }}
  \end{itemize}
 
-%-----------EXPERIENCE-----------
-\section{Experience}
+%-----------EDUCATION-----------
+\section{Education}
   \resumeSubHeadingListStart
-    \resumeProjectHeading{\textbf{EPICS Mentor}}{June 2024 - Present}
-      \resumeItemListStart
-        \resumeItem{Mentoring two teams working on a ride-sharing web app and a volunteer database for two non-profit organizations}
-        % \resumeItem{Conduct two-week long sprints and used various \textbf{GitHub tools} for project management}
-        \resumeItem{Leading agile-like sprints using \textbf{GitHub Projects} for project management}
-        \resumeItem{Constantly reviewing code to ensure codebase coherency and prevent feature regression }
-        % \resumeItem{Fostered accountability and ownership of work in team members}
-        \resumeItem{Fostering accountability by encouraging team members to be proud of their work and celebrating accomplishments}
-        \resumeItem{Over the past two semesters, I have guided four teams developing web apps for non-profit organizations}
-        % \resumeItem{Conducted workshops for tools like \textbf{Prisma} and \textbf{Auth0}}
-        \resumeItem{Conducted two workshops for the \textbf{Prisma ORM} tool; going over what it is, what it does, and conducted exercises on how to write database queries using the tool}
-        \resumeItem{Conducted one workshop on the \textbf{Auth0} service; going over common vulnerabilities with authentication systems, significance of the Auth0 service, and how to setup a development tenant in Auth0}
-      \resumeItemListEnd
+    % \resumeSubheading
+    %   {Anticipated Masters of Science in Computer Science}{August 2025 - May 2026}
+    %   {University of Texas at Dallas}{}
+    \resumeSubheading
+      {Bachelor of Science in Computer Science}{August 2022 - May 2026}
+      {University of Texas at Dallas $|$ GPA - 3.8 $|$ One year of concurrent Masters (Fast Track Program)}{}
   \resumeSubHeadingListEnd
-
-  \resumeSubHeadingListStart
-    \resumeProjectHeading{\textbf{Short-Term Working Group}}{August 2024 - December 2024}
-      \resumeItemListStart
-        \resumeItem{Played a major role in improving resources for my Software Engineering class through the STWG created by the professor}
-        \resumeItem{Assigned tasks to team members and planned refinements by discussing their comforts, strengths, and preferences}
-        \resumeItem{Attended regular meetings and kept extensive meeting notes to keep the team on-track with the current TODOs}
-        \resumeItem{Enhanced the curriculum to reduce the learning-curve for the course's semester-long project by building on the team's previous experiences}
-        \resumeItem{Created a 14+ minute long video presentation giving a bird's-eye view of the components of web development}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-  \resumeSubHeadingListStart
-  \resumeProjectHeading{\textbf{TWCGateway}}{August 2023 - May 2024}
-    \resumeItemListStart
-      \resumeItem{Implemented a full-stack web app for automating the onboarding process for a DFW-area based non-profit organization called The Warren Center}
-      \resumeItem{Lead two different teams of six people over the course of two semesters}
-      \resumeItem{Handled frequent requirement changes over the course of development}
-      \resumeItem{Converted 90\% of pen/paper based workflows into the web interface}
-      \resumeItem{Implemented token-based authentication using \textbf{Auth0}}
-      \resumeItem{Created the frontend using \textbf{ReactJS} and used \textbf{TailwindCSS} for styling}
-      \resumeItem{Created the backend using \textbf{ExpressJS}, and \textbf{Prisma} as the ORM with a dockerized \textbf{PostgreSQL} database}
-      \resumeItem{Deployed on \textbf{AWS S3} and \textbf{AWS Cloudfront}}
-
-    \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------
-% \section{Projects}
-%   \resumeSubHeadingListStart
-%     \resumeProjectHeading{\textbf{TWCGateway}}{August 2023 - May 2024}
-%   \resumeSubHeadingListEnd
-
-
-%-----------Collegiate Involvement-----------
-\section{Collegiate Involvement}
-  \resumeSubHeadingListStart
-    \resumeProjectHeading{\textbf{Axxess Hackathon} $|$ \emph{Overall $2^{nd} Place$}}{February 2024}
-      \resumeItemListStart
-        \resumeItem{Developed a web app using \textbf{ReactJS+Django} to help COPD patients monitor their symptoms}
-        \resumeItem{Used \textbf{k-means ML algorithm} on a COPD dataset from \textbf{Kaggle} to assign scores for severity of their symptoms }
-      \resumeItemListEnd
-    \resumeProjectHeading{\textbf{HackUTD} $|$ \emph{CBRE $3^{rd}$ Place}}{November 2023}
-      \resumeItemListStart
-        \resumeItem{Developed a website to buy stake in houses and other properties}
-        \resumeItem{Used a \textbf{Vision-and-Language Transformer (ViLT)} model fine-tuned for property evaluation based on photos}
-      \resumeItemListEnd
-    \resumeProjectHeading{\textbf{History of Aviation Archives $|$ \emph{40+ volunteering hours}}}{January 2023 - May 2023}
-      \resumeItemListStart
-        \resumeItem{Processed and prepared the complete John Wiren Collection, totaling 5.7 linear feet}
-        \resumeItem{Independently organized and cataloged available primary sources for preservation}
-        \resumeItem{Authored detailed collection entry documents for archival documentation and reference}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-------------------------------------------
-
-
 
 \end{document}
