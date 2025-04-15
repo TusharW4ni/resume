@@ -1,1 +1,1 @@
-[Current resume](./resume.pdf)
+[Current resume](./resume-swe.pdf)
